@@ -1,0 +1,65 @@
+name = YouNiYouWo
+description = YouNiYouWo Default Theme based on Bootstrap
+core = 7.x
+base theme = bootstrap
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+regions[navigation]     = 'Navigation'
+regions[slideshow]         = 'Slideshow'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[content_top] = 'Content Top'
+regions[content_top_first] = 'Content Top First'
+regions[content_top_second] = 'Content Top Second'
+regions[content_top_third] = 'Content Top Third'
+regions[content_top_fourth] = 'Content Top Fourth'
+regions[content_top_fullwidth] = 'Content Top Fullwidth'
+regions[content_fullwidth_background] = 'Content Fullwidth Background'
+regions[content_background_image] = 'Content Background Image'
+regions[content_bottom_fullwidth] = 'Content Bottom Fullwidth'
+regions[content_bottom]         = 'Content Bottom'
+regions[content_bottom_first]         = 'Content Bottom First'
+regions[content_bottom_second]         = 'Content Bottom Second'
+regions[content_bottom_third]         = 'Content Bottom Third'
+regions[content_bottom_fourth] = 'Content Bottom Fourth'
+regions[content_footer_fullwidth] = 'Content Footer Fullwidth'
+regions[footer]         = 'Footer'
+regions[copyright]         = 'Copyright'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = bootstrap/stylesheets/bootstrap.css
+stylesheets[all][] = css/style.css
+;stylesheets[all][] = fonts/flat-icon/flaticon.cssr
+;stylesheets[all][] = css/custom.css
+;stylesheets[all][] = css/timeline.css
+;stylesheets[all][] = css/responsive.css
+;;;;;;;;;;;;;;;;;;;;;;
+;;; Scripts
+;;;;;;;;;;;;;;;;;;;;;;
+scripts[] = 'bootstrap/javascripts/bootstrap.min.js'
+scripts[] = 'js/main.js'
+;scripts[] = 'bootstrap/js/affix.js'
+;scripts[] = 'bootstrap/js/alert.js'
+;scripts[] = 'bootstrap/js/button.js'
+;scripts[] = 'bootstrap/js/collapse.js'
+;scripts[] = 'bootstrap/js/dropdown.js'
+;scripts[] = 'bootstrap/js/modal.js'
+;scripts[] = 'bootstrap/js/npm.js'
+;scripts[] = 'bootstrap/js/tooltip.js'
+;scripts[] = 'bootstrap/js/popover.js'
+;scripts[] = 'bootstrap/js/scrollspy.js'
+;scripts[] = 'bootstrap/js/tab.js'
+;scripts[] = 'bootstrap/js/transition.js'
+;scripts[] = 'jquery.smartmenus.js'
+;scripts[] = 'addons/bootstrap/jquery.smartmenus.bootstrap.js'
+;scripts[] = 'js/jquery.ba-hashchange.min.js'
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts

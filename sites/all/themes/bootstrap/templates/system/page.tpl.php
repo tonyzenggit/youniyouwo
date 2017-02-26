@@ -161,12 +161,90 @@
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
-
+      <?php if (!empty($page['content_top'])): ?>
+          <?php print render($page['content_top']); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['content_top_first'])): ?>
+          <?php print render($page['content_top_first']); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['content_top_second'])): ?>
+          <?php print render($page['content_top_second']); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['content_top_third'])): ?>
+          <?php print render($page['content_top_third']); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['content_top_fourth'])): ?>
+          <?php print render($page['content_top_fourth']); ?>
+      <?php endif; ?>
   </div>
 </div>
 
-<?php if (!empty($page['footer'])): ?>
-  <footer class="footer <?php print $container_class; ?>">
-    <?php print render($page['footer']); ?>
-  </footer>
-<?php endif; ?>
+<div class="main-container container-fluid">
+    <div class="row">
+        <?php if (!empty($page['content_top_fullwidth'])): ?>
+            <?php print render($page['content_top_fullwidth']); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['content_fullwidth_background'])): ?>
+            <?php print render($page['content_fullwidth_background']); ?>
+        <?php endif; ?>
+    </div>
+</div>
+<div class="main-container <?php print $container_class; ?>">
+    <div class="row">
+        <?php if (!empty($page['content_background_image'])): ?>
+            <?php print render($page['content_background_image']); ?>
+        <?php endif; ?>
+    </div>
+</div>
+<div class="main-container container-fluid">
+    <div class="row">
+        <?php if (!empty($page['content_bottom_fullwidth'])): ?>
+            <?php print render($page['content_bottom_fullwidth']); ?>
+        <?php endif; ?>
+    </div>
+</div>
+<div class="main-container <?php print $container_class; ?>">
+    <div class="row">
+
+        <?php if (!empty($page['content_bottom'])): ?>
+            <?php print render($page['content_bottom']); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['content_bottom_first'])): ?>
+            <?php print render($page['content_bottom_first']); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['content_bottom_second'])): ?>
+            <?php print render($page['content_bottom_second']); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['content_bottom_third'])): ?>
+            <?php print render($page['content_bottom_third']); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['content_bottom_fourth'])): ?>
+            <?php print render($page['content_bottom_fourth']); ?>
+        <?php endif; ?>
+    </div>
+</div>
+<div class="main-container container-fluid">
+    <div class="row">
+        <?php if (!empty($page['content_footer_fullwidth'])): ?>
+            <?php print render($page['content_footer_fullwidth']); ?>
+        <?php endif; ?>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <?php if (!empty($page['footer'])): ?>
+            <div class="main_footer">
+                <div class="row">
+                    <?php print render($page['footer']); ?>
+                </div>
+            </div> <!-- End main footer -->
+        <?php endif; ?>
+        <?php if (!empty($page['copyright'])): ?>
+            <div class="bottom_footer">
+                <div class="row">
+                    <?php print render($page['copyright']); ?>
+                </div>
+            </div> <!-- End bottom footer -->
+        <?php endif; ?>
+    </div>
+</footer>
