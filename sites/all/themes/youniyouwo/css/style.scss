@@ -1,3 +1,179 @@
-#admin-menu-wrapper{
-  height:27px; //解决admin menu的height长度bug
+@charset "UTF-8"; //解决GBK下中文不兼容问题
+/*游你由我主样式*/
+//基本设置（变量，mixin，初始化等）
+$fontSize: 14px; //正文字体大小
+$fontColor: #555; //正文默认字体颜色
+$lineHeight: 1.5; //默认行高
+$regionMargin: 30px; //各区块或区域间的margin，统一样式。在当前一般使用2 * regionMargin作大间隔。
+$yyBlue: #00a8ec; //主题用蓝色，主色调
+$yyOrange: #e67e22; //主题用橘子色，副色调
+
+@mixin opacity($opacity:0.5) { //透明度兼容，默认0.5
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity * 100);
 }
+
+@mixin transition($time:0.3,$fun:ease-in-out) { //过渡效果兼容，默认0.3s，默认function为ease-in-out
+  -webkit-transition: all #{$time}s $fun;
+  -o-transition: all #{$time}s $fun;
+  -moz-transition: all #{$time}s $fun;
+  transition: all #{$time}s $fun;
+}
+
+body.admin-menu {
+  #navbar {
+    z-index: 400; //用以不挡住管理iframe
+  }
+}
+
+#admin-menu {
+  box-shadow: none; //管理菜单下阴影去除，方便开发
+  z-index: 99999;
+}
+
+#admin-menu-wrapper {
+  height: 27px; //解决admin menu的height长度bug
+}
+
+.alert { //用以解决nav条挡住管理提示的BUG
+  z-index: 9999999;
+  position: fixed;
+}
+
+//全局设置
+body {
+  font-family: "PingFang SC", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif; //兼容IOS
+  font-size: $fontSize;
+  color: #000;
+  line-height: $lineHeight;
+}
+
+a {
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.clear_fix { //配合bootstrap清除浮动，都懂
+  clear: both;
+}
+
+//顶部导航条
+#navbar {
+  padding-left: 10px; //覆写bootstrap的15px
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000;
+}
+
+.navbar-header {
+  a.logo {
+    img {
+      height: 36px;
+    }
+  }
+}
+
+.navbar-btn {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.navbar-brand {
+  padding: 15px 20px 15px 30px;
+}
+
+.navbar-default {
+  .navbar-brand {
+    &:hover, &:focus {
+      color: $yyOrange;
+      @include transition(0.1);
+    }
+  }
+  .navbar-nav {
+    .active {
+      > a {
+        background: none;
+      }
+      > a:hover, > a:focus {
+        background: none;
+        color: $yyOrange;
+        @include transition(0.1);
+      }
+    }
+  }
+}
+
+.nav {
+  > li {
+    > a {
+      font-size: 16px;
+    }
+  }
+}
+
+ul.menu.nav.navbar-nav.secondary {
+  float: right; //用户相关nav右浮动
+}
+
+ul.ajax-register-links.inline { //ajax注册登录
+  margin: 0;
+  float: right;
+  li {
+    float: left;
+    a {
+      color: $fontColor;
+      font-size: 16px;
+      padding: 15px;
+      line-height: 20px;
+      display: block;
+      &:hover, &:focus {
+        color: $yyOrange;
+        @include transition(0.1);
+      }
+    }
+  }
+}
+
+//解决ajax注册登录module的heightBug //在代码中使用!important并不好，具有强制性，不弹性，但是有时候没办法，少用即可。
+#modalContent {
+  top: 200px !important;
+}
+
+#modal-content {
+  max-height: 700px !important;
+}
+
+//首页幻灯片
+.front {
+  .carousel-control {
+    background: none !important; //去掉默认左右控制的背景
+    .icon-prev,.icon-next{
+      width: 54px;
+      height: 54px;
+      font-size: 48px;
+      background: rgba(0,168,236,0.7);
+      border-radius: 50%;
+      &:focus,&:hover{
+        background: rgba(0,168,236,1);
+        outline:none;
+      }
+    }
+  }
+  .carousel-indicators {
+    .active{
+      background-color: $yyBlue;
+      border:none;
+    }
+  }
+}
+

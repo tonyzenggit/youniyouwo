@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*游你由我 响应式设计*/
+// 基本视口设置
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1); //phone //767px
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1); //pad //991px
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1); //screen //1199px
+
+// 基本设置
+$regionMargin: 30px;
+@mixin transition($time:0.3,$fun:ease-in-out) {
+  -webkit-transition: all #{$time}s $fun;
+  -o-transition: all #{$time}s $fun;
+  -moz-transition: all #{$time}s $fun;
+  transition: all #{$time}s $fun;
+}
+
+//大屏幕端适配
+@media(min-width: $screen-xs-max) {
+  .not-front {
+    .main-container.first {
+      padding-top: 72px; //因为nav fixed了，所以需要用paddingtop撑开上层，不要被nav压到。
+    }
+  }
+}
+
+//移动端适配
+@media (max-width: $screen-xs-max) {
+  #navbar {
+    margin-top: 0;
+  }
+}

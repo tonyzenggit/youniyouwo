@@ -37,10 +37,10 @@ regions[copyright]         = 'Copyright'
 ;;;;;;;;;;;;;;;;;;;;;
 stylesheets[all][] = bootstrap/stylesheets/bootstrap.css
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/responsive.css
 ;stylesheets[all][] = fonts/flat-icon/flaticon.cssr
 ;stylesheets[all][] = css/custom.css
 ;stylesheets[all][] = css/timeline.css
-;stylesheets[all][] = css/responsive.css
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;;

@@ -1,4 +1,114 @@
+@charset "UTF-8";
+/*游你由我主样式*/
+body.admin-menu #navbar {
+  z-index: 400; }
+
+#admin-menu {
+  box-shadow: none;
+  z-index: 99999; }
+
 #admin-menu-wrapper {
   height: 27px; }
+
+.alert {
+  z-index: 9999999;
+  position: fixed; }
+
+body {
+  font-family: "PingFang SC", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5; }
+
+a:focus, a:hover {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.clear_fix {
+  clear: both; }
+
+#navbar {
+  padding-left: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000; }
+
+.navbar-header a.logo img {
+  height: 36px; }
+
+.navbar-btn {
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+.navbar-brand {
+  padding: 15px 20px 15px 30px; }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #e67e22;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+.navbar-default .navbar-nav .active > a {
+  background: none; }
+.navbar-default .navbar-nav .active > a:hover, .navbar-default .navbar-nav .active > a:focus {
+  background: none;
+  color: #e67e22;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+.nav > li > a {
+  font-size: 16px; }
+
+ul.menu.nav.navbar-nav.secondary {
+  float: right; }
+
+ul.ajax-register-links.inline {
+  margin: 0;
+  float: right; }
+  ul.ajax-register-links.inline li {
+    float: left; }
+    ul.ajax-register-links.inline li a {
+      color: #555;
+      font-size: 16px;
+      padding: 15px;
+      line-height: 20px;
+      display: block; }
+      ul.ajax-register-links.inline li a:hover, ul.ajax-register-links.inline li a:focus {
+        color: #e67e22;
+        -webkit-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+
+#modalContent {
+  top: 200px !important; }
+
+#modal-content {
+  max-height: 700px !important; }
+
+.front .carousel-control {
+  background: none !important; }
+  .front .carousel-control .icon-prev, .front .carousel-control .icon-next {
+    width: 54px;
+    height: 54px;
+    font-size: 48px;
+    background: rgba(0, 168, 236, 0.7);
+    border-radius: 50%; }
+    .front .carousel-control .icon-prev:focus, .front .carousel-control .icon-prev:hover, .front .carousel-control .icon-next:focus, .front .carousel-control .icon-next:hover {
+      background: #00a8ec;
+      outline: none; }
+.front .carousel-indicators .active {
+  background-color: #00a8ec;
+  border: none; }
 
 /*# sourceMappingURL=style.css.map */
