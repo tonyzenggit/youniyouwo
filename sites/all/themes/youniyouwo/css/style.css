@@ -44,11 +44,31 @@ a {
   color: inherit; }
   a:focus, a:hover {
     text-decoration: none; }
+  a:hover {
+    color: #00a8ec; }
 
 li {
   list-style: none; }
 
-.clear_fix {
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 6px;
+  margin-bottom: 6px; }
+
+p {
+  margin: 0 0 6px; }
+
+h2 {
+  font-size: 28px; }
+
+h3 {
+  font-size: 16px; }
+
+h2.block-title {
+  border-left: 4px solid #000;
+  padding-left: 8px;
+  margin-bottom: 20px; }
+
+.clear_fix, .clearfix {
   clear: both; }
 
 #navbar {
@@ -142,6 +162,8 @@ ul.ajax-register-links.inline {
 .not-front.node-type-zhuoyou .main-container.first {
   padding-top: 152px; }
 
+.node-type-zhuoyou .field-type-text, .node-type-zhuoyou .field-name-field-catalog {
+  cursor: default; }
 .node-type-zhuoyou .commerce-product-title {
   font-size: 28px; }
 .node-type-zhuoyou .field-name-field-english-title {
@@ -187,7 +209,7 @@ ul.ajax-register-links.inline {
     width: 54%; }
 .node-type-zhuoyou .field-name-body {
   clear: both;
-  padding-top: 20px; }
+  margin-top: 6px; }
 .node-type-zhuoyou .commerce-product-field-commerce-price {
   float: left;
   width: 16%;
@@ -207,7 +229,7 @@ ul.ajax-register-links.inline {
   margin-top: 50px;
   height: 50px; }
 
-button.form-submit {
+.commerce-add-to-cart button.form-submit {
   -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
@@ -216,8 +238,32 @@ button.form-submit {
   color: #e67e22;
   border: none;
   box-shadow: rgba(255, 87, 34, 0.6) 0 0 0 2px inset; }
-  button.form-submit:hover {
+  .commerce-add-to-cart button.form-submit:hover {
     color: rgba(255, 255, 255, 0.85);
     box-shadow: rgba(255, 87, 34, 0.89) 0 0 0 40px inset; }
+
+.region-content-top-first {
+  margin-top: 30px; }
+
+.view-id-zhuoyou .zhuoyou-item {
+  margin-bottom: 30px; }
+  .view-id-zhuoyou .zhuoyou-item > a {
+    display: inline-block;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
+    .view-id-zhuoyou .zhuoyou-item > a:hover {
+      box-shadow: 0 0 10px rgba(51, 122, 183, 0.7); }
+.view-id-zhuoyou h3 {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 0; }
+  .view-id-zhuoyou h3 span {
+    margin-left: 6px;
+    color: #FF5722;
+    font-weight: bold; }
+.view-id-zhuoyou .english_name {
+  color: #555; }
+.view-id-zhuoyou .form-group {
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,5 +29,15 @@
             }
 
         });
+        //tooltip加在这里
+        jQuery(function(){
+            jQuery(".field-name-field-catalog").attr({"title":"游戏分类","data-toggle":"tooltip"});
+            jQuery(".field-name-field-renshu").attr({"title":"游戏人数","data-toggle":"tooltip"});
+            jQuery(".field-name-field-shichang").attr({"title":"游戏时长","data-toggle":"tooltip"});
+            jQuery(".field-name-field-age").attr({"title":"适合的年龄","data-toggle":"tooltip"});
+            jQuery(".attribute-widgets select").attr({"title":"简装版：桌游本体。  过塑版：桌游本体+牌过塑，加强保护！  礼盒版：桌游本体+牌过塑+礼盒，收藏必备！","data-toggle":"tooltip"});
+            jQuery("[data-toggle='tooltip']").tooltip(); //启动tooltip必须
+        });
+
     })(jQuery);
 })(jQuery);
