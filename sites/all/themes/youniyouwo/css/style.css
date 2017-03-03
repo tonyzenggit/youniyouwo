@@ -12,7 +12,11 @@ body.admin-menu #navbar {
 
 .alert {
   z-index: 9999999;
-  position: fixed; }
+  position: fixed;
+  box-shadow: 0 0 8px grey;
+  top: 100px;
+  min-width: 200px;
+  font-size: 16px; }
 
 .oneKeyAdmin {
   border-radius: 50%;
@@ -36,8 +40,10 @@ body {
   color: #000;
   line-height: 1.5; }
 
-a:focus, a:hover {
-  text-decoration: none; }
+a {
+  color: inherit; }
+  a:focus, a:hover {
+    text-decoration: none; }
 
 li {
   list-style: none; }
@@ -50,10 +56,7 @@ li {
   position: fixed;
   left: 0;
   right: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
   z-index: 1000;
   box-shadow: 0 0 6px rgba(51, 122, 183, 0.4); }
 
@@ -182,22 +185,6 @@ ul.ajax-register-links.inline {
     height: 36px; }
   .node-type-zhuoyou .attribute-widgets .form-type-select, .node-type-zhuoyou .form-item-quantity .form-type-select {
     width: 54%; }
-.node-type-zhuoyou button.form-submit {
-  float: left;
-  width: 14%;
-  margin-top: 50px;
-  height: 50px;
-  font-size: 22px;
-  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.6);
-  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 2px inset; }
-  .node-type-zhuoyou button.form-submit:hover {
-    color: rgba(255, 255, 255, 0.85);
-    box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 40px inset; }
 .node-type-zhuoyou .field-name-body {
   clear: both;
   padding-top: 20px; }
@@ -213,5 +200,24 @@ ul.ajax-register-links.inline {
     display: inline-block; }
 .node-type-zhuoyou .field-name-body {
   color: #555; }
+.node-type-zhuoyou button.form-submit {
+  float: left;
+  width: 14%;
+  font-size: 22px;
+  margin-top: 50px;
+  height: 50px; }
+
+button.form-submit {
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  text-decoration: none;
+  color: #e67e22;
+  border: none;
+  box-shadow: rgba(255, 87, 34, 0.6) 0 0 0 2px inset; }
+  button.form-submit:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(255, 87, 34, 0.89) 0 0 0 40px inset; }
 
 /*# sourceMappingURL=style.css.map */

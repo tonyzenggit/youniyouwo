@@ -38,6 +38,10 @@ body.admin-menu {
 .alert { //用以解决nav条挡住管理提示的BUG
   z-index: 9999999;
   position: fixed;
+  box-shadow: 0 0 8px grey;
+  top: 100px;
+  min-width: 200px;
+  font-size: 16px;
 }
 .oneKeyAdmin{ //一键隐藏/显示管理菜单的按钮
   border-radius: 50%;
@@ -61,6 +65,7 @@ body {
 }
 
 a {
+  color:inherit;
   &:focus, &:hover {
     text-decoration: none;
   }
@@ -80,10 +85,7 @@ li {
   position: fixed;
   left: 0;
   right: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin:10px auto;
   z-index: 1000;
   box-shadow:0 0 6px rgba(51, 122, 183, 0.4); //nav的外发光 //0 0 即可将阴影做成外发光
 }
@@ -259,25 +261,7 @@ ul.ajax-register-links.inline { //ajax注册登录
       width:54%;
     }
   }
-  button.form-submit { //加入购物车按钮
-    float:left;
-    width:14%;
-    margin-top: 50px;
-    height: 50px;
-    //background: #000;
-    font-size:22px;
-    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);
-    box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 2px inset;
-    &:hover{
-      color: rgba(255, 255, 255, 0.85);
-      box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 40px inset;
-    }
-  }
+
   .field-name-body{
     clear:both;
     padding-top:20px;
@@ -297,5 +281,27 @@ ul.ajax-register-links.inline { //ajax注册登录
   .field-name-body{
     color:$fontColor;
   }
+  button.form-submit { //加入购物车按钮，单个商品详情页覆写
+    float: left;
+    width: 14%;
+    font-size:22px;
+    margin-top: 50px;
+    height: 50px;
+  }
 }
 
+button.form-submit { //加入购物车按钮
+  //background: #000;
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  text-decoration: none;
+  color: $yyOrange;
+  border:none;
+  box-shadow: rgba(255, 87, 34, 0.6) 0 0 0 2px inset;
+  &:hover{
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(255, 87, 34, 0.89) 0 0 0 40px inset;
+  }
+}
