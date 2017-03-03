@@ -14,6 +14,22 @@ body.admin-menu #navbar {
   z-index: 9999999;
   position: fixed; }
 
+.oneKeyAdmin {
+  border-radius: 50%;
+  background: #F44336;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border: none;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  box-shadow: 0 0 6px rgba(255, 87, 34, 0.7);
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
 body {
   font-family: "PingFang SC", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif;
   font-size: 14px;
@@ -38,7 +54,8 @@ li {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: 0 0 6px rgba(51, 122, 183, 0.4); }
 
 .navbar-header a.logo img {
   height: 36px; }
@@ -50,21 +67,29 @@ li {
 .navbar-brand {
   padding: 15px 20px 15px 30px; }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #e67e22;
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
-.navbar-default .navbar-nav .active > a {
-  background: none; }
-.navbar-default .navbar-nav .active > a:hover, .navbar-default .navbar-nav .active > a:focus {
-  background: none;
-  color: #e67e22;
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
+.navbar-default {
+  border: none; }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #e67e22;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #e67e22;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+  .navbar-default .navbar-nav .active > a {
+    background: none; }
+  .navbar-default .navbar-nav .active > a:hover, .navbar-default .navbar-nav .active > a:focus {
+    background: none;
+    color: #e67e22;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
 
 .nav > li > a {
   font-size: 16px; }
@@ -110,5 +135,83 @@ ul.ajax-register-links.inline {
 .front .carousel-indicators .active {
   background-color: #00a8ec;
   border: none; }
+
+.not-front.node-type-zhuoyou .main-container.first {
+  padding-top: 152px; }
+
+.node-type-zhuoyou .commerce-product-title {
+  font-size: 28px; }
+.node-type-zhuoyou .field-name-field-english-title {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px; }
+.node-type-zhuoyou .commerce-product-field-field-image {
+  float: left; }
+  .node-type-zhuoyou .commerce-product-field-field-image img:hover, .node-type-zhuoyou .commerce-product-field-field-image img:focus {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
+.node-type-zhuoyou .commerce-product-title-label {
+  display: none; }
+.node-type-zhuoyou .field-name-field-catalog, .node-type-zhuoyou .field-name-field-renshu, .node-type-zhuoyou .field-name-field-shichang, .node-type-zhuoyou .field-name-field-age {
+  float: left;
+  font-size: 28px;
+  color: #555;
+  border-left: 4px solid #00a8ec;
+  width: 20%;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  padding-left: 8px;
+  line-height: 1; }
+.node-type-zhuoyou button.form-submit, .node-type-zhuoyou .attribute-widgets, .node-type-zhuoyou .field-name-field-catalog, .node-type-zhuoyou .field-name-field-shichang {
+  margin-left: 36px; }
+.node-type-zhuoyou .attribute-widgets, .node-type-zhuoyou .form-item-quantity {
+  float: left;
+  width: 20%;
+  margin-top: 20px; }
+  .node-type-zhuoyou .attribute-widgets .control-label, .node-type-zhuoyou .form-item-quantity .control-label {
+    border-top: 4px solid #ff7800;
+    padding-top: 8px;
+    font-size: 20px;
+    line-height: 1;
+    color: #555; }
+  .node-type-zhuoyou .attribute-widgets input, .node-type-zhuoyou .form-item-quantity input {
+    width: 50%;
+    font-size: 16px;
+    height: 36px; }
+  .node-type-zhuoyou .attribute-widgets select, .node-type-zhuoyou .form-item-quantity select {
+    font-size: 16px;
+    height: 36px; }
+  .node-type-zhuoyou .attribute-widgets .form-type-select, .node-type-zhuoyou .form-item-quantity .form-type-select {
+    width: 54%; }
+.node-type-zhuoyou button.form-submit {
+  float: left;
+  width: 14%;
+  margin-top: 50px;
+  height: 50px;
+  font-size: 22px;
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 2px inset; }
+  .node-type-zhuoyou button.form-submit:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 40px inset; }
+.node-type-zhuoyou .field-name-body {
+  clear: both;
+  padding-top: 20px; }
+.node-type-zhuoyou .commerce-product-field-commerce-price {
+  float: left;
+  width: 16%;
+  margin-top: 44px;
+  margin-left: 64px;
+  font-size: 33px;
+  color: #F44336; }
+  .node-type-zhuoyou .commerce-product-field-commerce-price .field-item {
+    border-bottom: 4px solid #F44336;
+    display: inline-block; }
+.node-type-zhuoyou .field-name-body {
+  color: #555; }
 
 /*# sourceMappingURL=style.css.map */

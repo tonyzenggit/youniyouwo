@@ -13,13 +13,13 @@ $yyOrange: #e67e22; //主题用橘子色，副色调
   filter: alpha(opacity=$opacity * 100);
 }
 
-@mixin transition($time:0.3,$fun:ease-in-out) { //过渡效果兼容，默认0.3s，默认function为ease-in-out
+@mixin transition($time:0.1,$fun:ease-in-out) { //过渡效果兼容，默认0.1s，默认function为ease-in-out
   -webkit-transition: all #{$time}s $fun;
   -o-transition: all #{$time}s $fun;
   -moz-transition: all #{$time}s $fun;
   transition: all #{$time}s $fun;
 }
-
+//管理界面设置
 body.admin-menu {
   #navbar {
     z-index: 400; //用以不挡住管理iframe
@@ -39,7 +39,19 @@ body.admin-menu {
   z-index: 9999999;
   position: fixed;
 }
-
+.oneKeyAdmin{ //一键隐藏/显示管理菜单的按钮
+  border-radius: 50%;
+  background: #F44336;
+  color:#fff;
+  width: 45px;
+  height: 45px;
+  border: none;
+  position: absolute; //让其脱离文档流，不影响正常布局
+  top: 10%;
+  left: 2%;
+  box-shadow:0 0 6px rgba(255, 87, 34, 0.7);
+  @include transition();
+}
 //全局设置
 body {
   font-family: "PingFang SC", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif; //兼容IOS
@@ -73,6 +85,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   z-index: 1000;
+  box-shadow:0 0 6px rgba(51, 122, 183, 0.4); //nav的外发光 //0 0 即可将阴影做成外发光
 }
 
 .navbar-header {
@@ -93,6 +106,7 @@ li {
 }
 
 .navbar-default {
+  border:none;
   .navbar-brand {
     &:hover, &:focus {
       color: $yyOrange;
@@ -100,6 +114,12 @@ li {
     }
   }
   .navbar-nav {
+    >li{
+      >a:hover,>a:focus{
+        color:$yyOrange;
+        @include transition(0.1);
+      }
+    }
     .active {
       > a {
         background: none;
@@ -174,6 +194,108 @@ ul.ajax-register-links.inline { //ajax注册登录
       background-color: $yyBlue;
       border:none;
     }
+  }
+}
+
+//单个商品详情页
+.not-front.node-type-zhuoyou{
+  .main-container.first {
+    padding-top: 152px;
+  }
+}
+.node-type-zhuoyou{ //单个商品详情页
+  .commerce-product-title{ //主标题
+    font-size:28px;
+  }
+  .field-name-field-english-title{ //英文副标题
+    font-size:20px;
+    color:$fontColor;
+    margin-bottom:20px;
+  }
+  .commerce-product-field-field-image{ //封面
+    float:left;
+    img:hover,img:focus{
+      box-shadow:0 0 6px rgba(0, 0, 0, 0.4);
+    }
+  }
+  .commerce-product-title-label{ //去掉“标题：”
+    display:none;
+  }
+  .field-name-field-catalog,.field-name-field-renshu,.field-name-field-shichang,.field-name-field-age{
+    float:left;
+    font-size:28px;
+    color:$fontColor;
+    border-left:4px solid $yyBlue;
+    width:20%;
+    margin-top:12px;
+    margin-bottom:30px;
+    padding-left:8px;
+    line-height:1;
+  }
+  button.form-submit,.attribute-widgets,.field-name-field-catalog,.field-name-field-shichang{
+    margin-left:36px;
+  }
+  .attribute-widgets,.form-item-quantity{
+    float:left;
+    width:20%;
+    margin-top:20px;
+    .control-label{
+      border-top:4px solid #ff7800;
+      padding-top:8px;
+      font-size:20px;
+      line-height:1;
+      color:$fontColor;
+    }
+    input{
+      width:50%;
+      font-size:16px;
+      height:36px;
+    }
+    select{
+      font-size:16px;
+      height:36px;
+    }
+    .form-type-select{
+      width:54%;
+    }
+  }
+  button.form-submit { //加入购物车按钮
+    float:left;
+    width:14%;
+    margin-top: 50px;
+    height: 50px;
+    //background: #000;
+    font-size:22px;
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 2px inset;
+    &:hover{
+      color: rgba(255, 255, 255, 0.85);
+      box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 40px inset;
+    }
+  }
+  .field-name-body{
+    clear:both;
+    padding-top:20px;
+  }
+  .commerce-product-field-commerce-price{ //价签
+    float:left;
+    width:16%;
+    margin-top:44px;
+    margin-left:64px;
+    font-size:33px;
+    color:#F44336;
+    .field-item{
+      border-bottom:4px solid #F44336;
+      display: inline-block;
+    }
+  }
+  .field-name-body{
+    color:$fontColor;
   }
 }
 
