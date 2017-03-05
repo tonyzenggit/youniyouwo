@@ -90,6 +90,9 @@ h2.block-title {
   clear: both; }
 
 /***********************顶部导航条***********************/
+.dropdown-menu > .active a, .dropdown-menu > .active a:hover, .dropdown-menu > .active a:focus {
+  color: #333; }
+
 #navbar {
   padding-left: 10px;
   position: fixed;

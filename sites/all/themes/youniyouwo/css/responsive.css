@@ -2,7 +2,10 @@
 /*游你由我 响应式设计*/
 @media (min-width: 767px) {
   .not-front .main-container.first {
-    padding-top: 72px; } }
+    padding-top: 72px; }
+
+  li.expanded.active.dropdown:hover > .dropdown-menu {
+    display: block; } }
 @media (max-width: 767px) {
   /***********************修复AjaxRegister在移动端的不适配Bug***********************/
   #modalContent {
@@ -27,6 +30,11 @@
 
   .region-content-top-first, .region-content-top-second, .region-content-top-third, .region-content-top-fourth {
     margin-top: 10px; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    padding-left: 50px; }
+  .navbar-default .navbar-nav .open .dropdown-menu .active a, .navbar-default .navbar-nav .open .dropdown-menu .active a:hover, .navbar-default .navbar-nav .open .dropdown-menu .active a:focus {
+    background: #f9f9f9; }
 
   #navbar {
     margin-top: 0;
