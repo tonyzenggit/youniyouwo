@@ -4,7 +4,101 @@
   .not-front .main-container.first {
     padding-top: 72px; } }
 @media (max-width: 767px) {
+  /***********************修复AjaxRegister在移动端的不适配Bug***********************/
+  #modalContent {
+    top: 100px !important;
+    left: 0 !important; }
+    #modalContent .form-control {
+      width: 250px; }
+    #modalContent #modal-content {
+      width: 100% !important; }
+    #modalContent ul.ajax-register-links.inline li a {
+      padding-top: 0; }
+    #modalContent .form-item.form-item-name.form-type-textfield.form-group {
+      float: left;
+      margin-top: 15px; }
+
+  .ctools-modal-dialog.modal-dialog {
+    width: 100% !important; }
+
+  /***********************全局样式设置***********************/
+  h2 {
+    font-size: 22px; }
+
+  .region-content-top-first, .region-content-top-second, .region-content-top-third, .region-content-top-fourth {
+    margin-top: 10px; }
+
   #navbar {
-    margin-top: 0; } }
+    margin-top: 0;
+    opacity: 0.9;
+    filter: alpha(opacity=90); }
+
+  .navbar-brand {
+    padding-left: 10px; }
+
+  footer#main .intro {
+    padding-left: 30px;
+    padding-right: 30px; }
+  footer#main ul {
+    padding-left: 20px; }
+  footer#main .follow {
+    margin-top: 10px; }
+  footer#main h3 {
+    text-align: center; }
+
+  .front .carousel-control {
+    display: none; }
+  .front .carousel-indicators {
+    margin-bottom: 0; }
+  .front h3 {
+    margin-top: 4px;
+    text-align: center; }
+    .front h3 span {
+      font-size: 14px;
+      display: block;
+      margin-left: 0; }
+  .front .english_name {
+    display: none; }
+  .front p.price {
+    text-align: center; }
+  .front .commerce-add-to-cart button.form-submit {
+    display: none; }
+  .front .zhuoyou-item {
+    margin-bottom: 10px; }
+  .front .owl-item .img-responsive {
+    margin: 0 auto; }
+
+  .not-front .main-container.first.container {
+    padding-top: 60px; }
+
+  .node-type-zhuoyou .commerce-product-title {
+    font-size: 26px; }
+  .node-type-zhuoyou .field-name-field-english-title {
+    font-size: 16px; }
+  .node-type-zhuoyou .field-name-field-catalog, .node-type-zhuoyou .field-name-field-renshu, .node-type-zhuoyou .field-name-field-shichang, .node-type-zhuoyou .field-name-field-age {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px; }
+  .node-type-zhuoyou button.form-submit, .node-type-zhuoyou .attribute-widgets, .node-type-zhuoyou .field-name-field-catalog, .node-type-zhuoyou .field-name-field-shichang {
+    margin-left: 0; }
+  .node-type-zhuoyou .attribute-widgets, .node-type-zhuoyou .form-item-quantity {
+    width: 50%;
+    margin-top: 10px; }
+  .node-type-zhuoyou button.form-submit {
+    width: 40%;
+    font-size: 16px;
+    margin-top: 10px;
+    height: 40px; }
+  .node-type-zhuoyou .commerce-product-field-commerce-price {
+    width: 40%;
+    margin-top: 8px;
+    margin-left: 34px;
+    font-size: 28px;
+    color: #F44336; }
+    .node-type-zhuoyou .commerce-product-field-commerce-price .field-item {
+      border-bottom: 0; }
+  .node-type-zhuoyou .region-content-top {
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=responsive.css.map */

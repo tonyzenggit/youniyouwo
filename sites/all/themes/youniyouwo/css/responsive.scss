@@ -9,7 +9,19 @@ $screen-lg-min: 1200px;
 $screen-md-max: ($screen-lg-min - 1); //screen //1199px
 
 // 基本设置
-$regionMargin: 30px;
+$regionMargin: 10px; //这里是移动端专用的RegionMargin
+@mixin opacity($opacity:0.5) { //透明度兼容，默认0.5
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity * 100);
+}
+
+@mixin transition($time:0.1,$fun:ease-in-out) { //过渡效果兼容，默认0.1s，默认function为ease-in-out
+  -webkit-transition: all #{$time}s $fun;
+  -o-transition: all #{$time}s $fun;
+  -moz-transition: all #{$time}s $fun;
+  transition: all #{$time}s $fun;
+}
+
 @mixin transition($time:0.3,$fun:ease-in-out) {
   -webkit-transition: all #{$time}s $fun;
   -o-transition: all #{$time}s $fun;
@@ -28,7 +40,139 @@ $regionMargin: 30px;
 
 //移动端适配
 @media (max-width: $screen-xs-max) {
+  /***********************修复AjaxRegister在移动端的不适配Bug***********************/
+  #modalContent{
+    top:100px !important;
+    left:0 !important;
+    .form-control{
+      width:250px;
+    }
+    #modal-content{
+      width:100% !important;
+    }
+    ul.ajax-register-links.inline li a{
+      padding-top:0;
+    }
+    .form-item.form-item-name.form-type-textfield.form-group{
+      float:left;
+      margin-top:15px;
+    }
+  }
+  .ctools-modal-dialog.modal-dialog {
+    width:100% !important;
+  }
+  /***********************全局样式设置***********************/
+  h2 {
+    font-size: 22px;
+  }
+  h2.block-title {
+
+  }
+  .region-content-top-first, .region-content-top-second, .region-content-top-third, .region-content-top-fourth {
+    margin-top: $regionMargin;
+  }
   #navbar {
     margin-top: 0;
+    @include opacity(0.9);
+  }
+  .navbar-brand {
+    padding-left: 10px;
+  }
+  .main-container.first.container {
+    //padding-top: 50px //腾出给Nav Fixed的空间
+  }
+  footer#main {
+    .intro {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .follow {
+      margin-top: $regionMargin;
+    }
+    h3{
+      text-align: center;
+    }
+  }
+  .front {
+    .carousel-control {
+      display: none;
+    }
+    .carousel-indicators {
+      margin-bottom: 0;
+    }
+    h3 {
+      margin-top: 4px;
+      text-align: center;
+      span {
+        font-size: 14px;
+        display: block;
+        margin-left: 0;
+      }
+    }
+    .english_name {
+      display: none;
+    }
+    p.price {
+      text-align: center;
+    }
+    .commerce-add-to-cart button.form-submit {
+      display: none;
+    }
+    .zhuoyou-item {
+      margin-bottom: $regionMargin;
+    }
+    .owl-item {
+      .img-responsive {
+        margin: 0 auto;
+      }
+    }
+  }
+  .not-front {
+    .main-container.first.container {
+      padding-top: 60px; //不让Nav挡住
+    }
+  }
+  .node-type-zhuoyou { //单个商品详情页
+    .commerce-product-title { //主标题
+      font-size: 26px;
+    }
+    .field-name-field-english-title{
+      font-size:16px;
+    }
+    .field-name-field-catalog, .field-name-field-renshu, .field-name-field-shichang, .field-name-field-age{
+      width:50%;
+      margin-top:10px;
+      margin-bottom:10px;
+      font-size:22px;
+    }
+    button.form-submit, .attribute-widgets, .field-name-field-catalog, .field-name-field-shichang {
+      margin-left: 0;
+    }
+    .attribute-widgets, .form-item-quantity {
+      width:50%;
+      margin-top:10px;
+    }
+    button.form-submit { //加入购物车按钮，单个商品详情页覆写
+      width: 40%;
+      font-size: 16px;
+      margin-top: 10px;
+      height: 40px;
+    }
+    .commerce-product-field-commerce-price { //价签
+      width: 40%;
+      margin-top: 8px;
+      margin-left: 34px;
+      font-size: 28px;
+      color: #F44336;
+      .field-item {
+        border-bottom: 0;
+      }
+    }
+    .region-content-top{
+      margin-top:$regionMargin;
+    }
   }
 }

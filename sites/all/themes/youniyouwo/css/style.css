@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /***********************变量、mixin等scss设置***********************/
 /***********************管理界面设置***********************/
+ul.contextual-links {
+  list-style: none; }
+
 body.admin-menu #navbar {
   z-index: 400; }
 
@@ -26,14 +29,19 @@ body.admin-menu #navbar {
   width: 45px;
   height: 45px;
   border: none;
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 2%;
   box-shadow: 0 0 6px rgba(255, 87, 34, 0.7);
   -webkit-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
+  transition: all 0.1s ease-in-out;
+  opacity: 0.2;
+  filter: alpha(opacity=20); }
+  .oneKeyAdmin:focus, .oneKeyAdmin:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
 
 /***********************全局基础样式设置***********************/
 body {
