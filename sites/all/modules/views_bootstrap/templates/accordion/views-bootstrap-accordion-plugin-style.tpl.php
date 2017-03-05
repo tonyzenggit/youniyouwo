@@ -7,7 +7,8 @@
              data-toggle="collapse"
              data-parent="#views-bootstrap-accordion-<?php print $id ?>"
              href="#collapse<?php print $key ?>">
-            <?php print $titles[$key] ?>
+            <i class="more-less glyphicon glyphicon-plus"></i>
+            #&nbsp;<?php print $titles[$key] ?>
           </a>
         </h4>
       </div>

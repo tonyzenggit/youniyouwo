@@ -38,6 +38,25 @@
             jQuery(".attribute-widgets select").attr({"title":"简装版：桌游本体。  过塑版：桌游本体+牌过塑，加强保护！  礼盒版：桌游本体+牌过塑+礼盒，收藏必备！","data-toggle":"tooltip"});
             jQuery("[data-toggle='tooltip']").tooltip(); //启动tooltip必须
         });
+        //针对Boostrap Accordion，自动开启第一个 Collapse。
+        jQuery(function(){
+            //jQuery('#collapse0').addClass('in'); //用这个不行，是强硬加的in，不能和icon连动，用下面的toggle方法会更好。
+            jQuery('#collapse0').collapse('toggle');
+        });
+        //添加icon特效
+        jQuery(function(){
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find(".more-less")
+                .toggleClass('glyphicon-plus glyphicon-minus');
+        }
+        $('.panel-group').on('hidden.bs.collapse', toggleIcon).on('shown.bs.collapse', toggleIcon);
+        });
 
+
+
+
+        //End Here
     })(jQuery);
 })(jQuery);
