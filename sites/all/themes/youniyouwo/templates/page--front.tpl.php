@@ -225,7 +225,7 @@
         <?php endif; ?>
     </div>
 </div>
-<footer>
+<footer id="main">
     <div class="container">
         <?php if (!empty($page['footer'])): ?>
                 <div class="row">

@@ -316,30 +316,37 @@ ul.ajax-register-links.inline {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
 
 /***********************footer***********************/
-footer {
-  margin-top: 30px;
+footer#main {
+  margin-top: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
   background: #333;
   color: #fff; }
-  footer .intro {
+  footer#main .intro {
     padding-right: 100px; }
-  footer ul li {
+  footer#main ul li {
     list-style: inherit;
     color: #fff; }
-  footer h3 {
-    font-size: 18px;
+  footer#main h3 {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px; }
-  footer P {
+  footer#main P {
     color: #777; }
-  footer img.social {
-    max-width: 200px; }
-  footer .region-copyright {
+  footer#main .follow p {
+    max-width: 160px;
+    text-align: center; }
+  footer#main .follow img.social {
+    max-width: 160px;
+    padding: 0;
+    margin-right: 20px; }
+    footer#main .follow img.social:hover {
+      box-shadow: 0 0 12px #607D8B; }
+  footer#main .region-copyright {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid #3a3a3a; }
-    footer .region-copyright p {
+    footer#main .region-copyright p {
       color: #777;
       text-align: center; }
 

@@ -224,21 +224,17 @@
         <?php endif; ?>
     </div>
 </div>
-<footer>
+<footer id="main">
     <div class="container">
         <?php if (!empty($page['footer'])): ?>
-            <div class="main_footer">
-                <div class="row">
-                    <?php print render($page['footer']); ?>
-                </div>
-            </div> <!-- End main footer -->
+            <div class="row">
+                <?php print render($page['footer']); ?>
+            </div>
         <?php endif; ?>
         <?php if (!empty($page['copyright'])): ?>
-            <div class="bottom_footer">
-                <div class="row">
-                    <?php print render($page['copyright']); ?>
-                </div>
-            </div> <!-- End bottom footer -->
+            <div class="row">
+                <?php print render($page['copyright']); ?>
+            </div>
         <?php endif; ?>
     </div>
 </footer>

@@ -6,6 +6,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.css" afterPath="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.scss" afterPath="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--front.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--front.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--zhuoyou.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--zhuoyou.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page.tpl.php" />
     </list>
     <ignored path="youniyouwo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +45,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="475" column="20" selection-start-line="475" selection-start-column="20" selection-end-line="475" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="452" column="17" selection-start-line="452" selection-start-column="17" selection-end-line="452" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -52,8 +55,18 @@
       <file leaf-file-name="page--front.tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--front.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1082">
-              <caret line="235" column="33" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="33" />
+            <state relative-caret-position="354">
+              <caret line="227" column="16" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="692">
+              <caret line="245" column="9" selection-start-line="232" selection-start-column="0" selection-end-line="245" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -62,8 +75,28 @@
       <file leaf-file-name="page--zhuoyou.tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--zhuoyou.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
+            <state relative-caret-position="484">
+              <caret line="231" column="18" selection-start-line="231" selection-start-column="18" selection-end-line="231" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node--zhuoyou.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/node--zhuoyou.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/html.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -107,7 +140,6 @@
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/block--ajax-register--ajax-register-block.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/responsive.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.css" />
-        <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page.tpl.php" />
         <option value="$PROJECT_DIR$/includes/theme.inc" />
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/1page--zhuoyou.tpl.php" />
         <option value="$PROJECT_DIR$/modules/field/theme/field.tpl.php" />
@@ -117,9 +149,10 @@
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/html.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/commerce/modules/cart/commerce_cart.module" />
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/block.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--zhuoyou.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/js/main.js" />
+        <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--front.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--zhuoyou.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.scss" />
       </list>
     </option>
@@ -548,12 +581,12 @@
       <workItem from="1488506815659" duration="13221000" />
       <workItem from="1488621386856" duration="973000" />
       <workItem from="1488637026873" duration="3639000" />
-      <workItem from="1488686139992" duration="6034000" />
+      <workItem from="1488686139992" duration="8303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68669000" />
+    <option name="totallyTimeSpent" value="70938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1934" height="1048" extended-state="0" />
@@ -869,22 +902,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/css/text.scss" />
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="140" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="249" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/html.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/commerce/modules/cart/commerce_cart.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -908,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/node--zhuoyou.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="962">
@@ -934,26 +943,50 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--zhuoyou.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--front.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
+        <state relative-caret-position="354">
+          <caret line="227" column="16" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--front.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1082">
-          <caret line="235" column="33" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="33" />
+        <state relative-caret-position="692">
+          <caret line="245" column="9" selection-start-line="232" selection-start-column="0" selection-end-line="245" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/page--zhuoyou.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="231" column="18" selection-start-line="231" selection-start-column="18" selection-end-line="231" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/node--zhuoyou.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/templates/html.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/youniyouwo/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="475" column="20" selection-start-line="475" selection-start-column="20" selection-end-line="475" selection-end-column="20" />
+        <state relative-caret-position="120">
+          <caret line="452" column="17" selection-start-line="452" selection-start-column="17" selection-end-line="452" selection-end-column="17" />
           <folding />
         </state>
       </provider>

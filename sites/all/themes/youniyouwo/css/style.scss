@@ -449,8 +449,8 @@ ul.ajax-register-links.inline { //ajax注册登录
   }
 }
 /***********************footer***********************/
-footer{
-  margin-top:$regionMargin;
+footer#main{ //使用main来区分主footer和其他footer
+  margin-top:2 * $regionMargin;
   padding-top:$regionMargin;
   padding-bottom:$regionMargin;
   background:#333;
@@ -465,15 +465,27 @@ footer{
     }
   }
   h3{
-    font-size:18px;
+    font-size:20px;
     font-weight:bold;
     margin-bottom:10px;
   }
   P{
     color:#777;
   }
-  img.social{
-    max-width:200px;
+
+  .follow{
+    p{
+      max-width:160px;
+      text-align: center;
+    }
+    img.social{
+      max-width:160px;
+      padding:0; //去掉col-xs带来的左右padding15px
+      margin-right:20px;
+      &:hover{
+        box-shadow: 0 0 12px #607D8B;
+      }
+    }
   }
   .region-copyright{ //CopyRight区域
     margin-top:$regionMargin/2;
