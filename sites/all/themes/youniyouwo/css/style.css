@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*游你由我主样式*/
+/***********************变量、mixin等scss设置***********************/
+/***********************管理界面设置***********************/
 body.admin-menu #navbar {
   z-index: 400; }
 
@@ -34,6 +35,7 @@ body.admin-menu #navbar {
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
+/***********************全局基础样式设置***********************/
 body {
   font-family: "PingFang SC", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif;
   font-size: 14px;
@@ -71,6 +73,7 @@ h2.block-title {
 .clear_fix, .clearfix {
   clear: both; }
 
+/***********************顶部导航条***********************/
 #navbar {
   padding-left: 10px;
   position: fixed;
@@ -93,13 +96,13 @@ h2.block-title {
 .navbar-default {
   border: none; }
   .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #e67e22;
+    color: #FF5722;
     -webkit-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #e67e22;
+    color: #FF5722;
     -webkit-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -108,7 +111,7 @@ h2.block-title {
     background: none; }
   .navbar-default .navbar-nav .active > a:hover, .navbar-default .navbar-nav .active > a:focus {
     background: none;
-    color: #e67e22;
+    color: #FF5722;
     -webkit-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -132,7 +135,7 @@ ul.ajax-register-links.inline {
       line-height: 20px;
       display: block; }
       ul.ajax-register-links.inline li a:hover, ul.ajax-register-links.inline li a:focus {
-        color: #e67e22;
+        color: #FF5722;
         -webkit-transition: all 0.1s ease-in-out;
         -o-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
@@ -144,6 +147,7 @@ ul.ajax-register-links.inline {
 #modal-content {
   max-height: 700px !important; }
 
+/***********************首页幻灯片***********************/
 .front .carousel-control {
   background: none !important; }
   .front .carousel-control .icon-prev, .front .carousel-control .icon-next {
@@ -159,6 +163,7 @@ ul.ajax-register-links.inline {
   background-color: #00a8ec;
   border: none; }
 
+/***********************单个商品详情页***********************/
 .not-front.node-type-zhuoyou .main-container.first {
   padding-top: 152px; }
 
@@ -235,14 +240,15 @@ ul.ajax-register-links.inline {
   -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   text-decoration: none;
-  color: #e67e22;
+  color: #FF5722;
   border: none;
   box-shadow: rgba(255, 87, 34, 0.6) 0 0 0 2px inset; }
   .commerce-add-to-cart button.form-submit:hover {
     color: rgba(255, 255, 255, 0.85);
     box-shadow: rgba(255, 87, 34, 0.89) 0 0 0 40px inset; }
 
-.region-content-top-first {
+/***********************热门商品展示区块***********************/
+.region-content-top-first, .region-content-top-second, .region-content-top-third, .region-content-top-fourth {
   margin-top: 30px; }
 
 .view-id-zhuoyou .zhuoyou-item {
@@ -265,5 +271,62 @@ ul.ajax-register-links.inline {
   color: #555; }
 .view-id-zhuoyou .form-group {
   margin-bottom: 0; }
+
+/***********************商品展示区块的owl-carousel设置***********************/
+.view-content .owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+  top: 70px;
+  padding: 2px 10px;
+  font-size: 20px;
+  background: #00a8ec;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+.view-content .owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0; }
+  .view-content .owl-theme .owl-controls .owl-buttons .owl-next:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+.view-content .owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0; }
+  .view-content .owl-theme .owl-controls .owl-buttons .owl-prev:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+.view-content .owl-theme .owl-controls .owl-page span {
+  background: #00a8ec;
+  opacity: 0.3;
+  filter: alpha(opacity=30); }
+.view-content .owl-theme .owl-controls .owl-page.active span {
+  background: #00a8ec; }
+.view-content .owl-theme:hover .owl-controls .owl-buttons div {
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+
+/***********************分类商品展示区块***********************/
+.view-id-zhuoyou p.price {
+  color: #FF5722;
+  line-height: 1;
+  font-weight: bold; }
+.view-id-zhuoyou .owl-item {
+  margin-top: 10px; }
+  .view-id-zhuoyou .owl-item img:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); }
+
+/***********************footer***********************/
+footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background: #333;
+  color: #fff; }
+  footer .region-copyright {
+    padding-top: 15px;
+    border-top: 1px solid #3a3a3a; }
+    footer .region-copyright p {
+      color: #777;
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

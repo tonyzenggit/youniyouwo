@@ -1,12 +1,13 @@
 @charset "UTF-8"; //解决GBK下中文不兼容问题
-/*游你由我主样式*/
-//基本设置（变量，mixin，初始化等）
+//游你由我主样式
+
+/***********************变量、mixin等scss设置***********************/
 $fontSize: 14px; //正文字体大小
 $fontColor: #555; //正文默认字体颜色
 $lineHeight: 1.5; //默认行高
-$regionMargin: 30px; //各区块或区域间的margin，统一样式。在当前一般使用2 * regionMargin作大间隔。
+$regionMargin: 30px; //各区块或区域间的margin，统一样式。
 $yyBlue: #00a8ec; //主题用蓝色，主色调
-$yyOrange: #e67e22; //主题用橘子色，副色调
+$yyOrange: #FF5722; //主题用橘子色，副色调
 
 @mixin opacity($opacity:0.5) { //透明度兼容，默认0.5
   opacity: $opacity;
@@ -20,7 +21,7 @@ $yyOrange: #e67e22; //主题用橘子色，副色调
   transition: all #{$time}s $fun;
 }
 
-//管理界面设置
+/***********************管理界面设置***********************/
 body.admin-menu {
   #navbar {
     z-index: 400; //用以不挡住管理iframe
@@ -59,7 +60,7 @@ body.admin-menu {
   @include transition();
 }
 
-//全局设置
+/***********************全局基础样式设置***********************/
 body {
   font-family: "PingFang SC", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif; //兼容IOS
   font-size: $fontSize;
@@ -104,11 +105,11 @@ h2.block-title { //区块标题
   margin-bottom: 20px;
 }
 
-.clear_fix,.clearfix { //配合bootstrap清除浮动，都懂
+.clear_fix, .clearfix { //配合bootstrap清除浮动，都懂
   clear: both;
 }
 
-//顶部导航条
+/***********************顶部导航条***********************/
 #navbar {
   padding-left: 10px; //覆写bootstrap的15px
   position: fixed;
@@ -204,9 +205,9 @@ ul.ajax-register-links.inline { //ajax注册登录
   max-height: 700px !important;
 }
 
-//首页幻灯片
+/***********************首页幻灯片***********************/
 .front {
-  .container{
+  .container {
     //width:1000px;
   }
 
@@ -232,7 +233,7 @@ ul.ajax-register-links.inline { //ajax注册登录
   }
 }
 
-//单个商品详情页
+/***********************单个商品详情页***********************/
 .not-front.node-type-zhuoyou {
   .main-container.first {
     padding-top: 152px;
@@ -240,8 +241,8 @@ ul.ajax-register-links.inline { //ajax注册登录
 }
 
 .node-type-zhuoyou { //单个商品详情页
-  .field-type-text,.field-name-field-catalog{ //覆写tooltip.js导致的cursor错乱
-    cursor:default;
+  .field-type-text, .field-name-field-catalog { //覆写tooltip.js导致的cursor错乱
+    cursor: default;
   }
   .commerce-product-title { //主标题
     font-size: 28px;
@@ -345,8 +346,8 @@ ul.ajax-register-links.inline { //ajax注册登录
   }
 }
 
-//商品区块
-.region-content-top-first {
+/***********************热门商品展示区块***********************/
+.region-content-top-first,.region-content-top-second,.region-content-top-third,.region-content-top-fourth {
   margin-top: $regionMargin;
 }
 
@@ -363,12 +364,12 @@ ul.ajax-register-links.inline { //ajax注册登录
   }
   h3 {
     font-weight: bold;
-    color:#333;
+    color: #333;
     margin-top: 10px;
     margin-bottom: 0;
     span {
       margin-left: 6px;
-      color: #FF5722;
+      color: $yyOrange;
       font-weight: bold;
     }
   }
@@ -377,5 +378,89 @@ ul.ajax-register-links.inline { //ajax注册登录
   }
   .form-group {
     margin-bottom: 0;
+  }
+}
+
+/***********************商品展示区块的owl-carousel设置***********************/
+.view-content {
+  .owl-theme {
+    .owl-controls {
+      .owl-buttons { //prev next按钮
+
+        div { //按钮item
+          position: absolute;
+          top: 70px;
+          padding: 2px 10px;
+          font-size: 20px;
+          background: $yyBlue;
+          @include opacity(0);
+          @include transition(0.2);
+        }
+        .owl-next {
+          right: 0;
+          &:hover {
+            @include opacity(1);
+          }
+        }
+        .owl-prev {
+          left: 0;
+          &:hover {
+            @include opacity(1);
+          }
+        }
+      }
+      .owl-page {
+        span {
+          background: $yyBlue;
+          @include opacity(0.3);
+        }
+      }
+      .owl-page.active {
+        span {
+          background: $yyBlue;
+        }
+      }
+    }
+  }
+  .owl-theme:hover {
+    .owl-controls {
+      .owl-buttons {
+        div {
+          @include opacity(0.8);
+
+        }
+      }
+    }
+  }
+}
+
+/***********************分类商品展示区块***********************/
+.view-id-zhuoyou {
+  p.price {
+    color: $yyOrange;
+    line-height:1;
+    font-weight:bold;
+  }
+  .owl-item{
+    margin-top:10px;
+    img:hover{
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+/***********************footer***********************/
+footer{
+  margin-top:$regionMargin;
+  padding-top:$regionMargin/2;
+  padding-bottom:$regionMargin;
+  background:#333;
+  color:#fff;
+  .region-copyright{ //CopyRight区域
+    padding-top:$regionMargin/2;
+    border-top:1px solid #3a3a3a;
+    p{
+      color:#777;
+      text-align: center;
+    }
   }
 }

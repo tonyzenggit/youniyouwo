@@ -228,18 +228,14 @@
 <footer>
     <div class="container">
         <?php if (!empty($page['footer'])): ?>
-            <div class="main_footer">
                 <div class="row">
                     <?php print render($page['footer']); ?>
                 </div>
-            </div> <!-- End main footer -->
         <?php endif; ?>
         <?php if (!empty($page['copyright'])): ?>
-            <div class="bottom_footer">
                 <div class="row">
                     <?php print render($page['copyright']); ?>
                 </div>
-            </div> <!-- End bottom footer -->
         <?php endif; ?>
     </div>
 </footer>
