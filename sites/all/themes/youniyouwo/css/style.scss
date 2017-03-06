@@ -126,13 +126,8 @@ h2.block-title { //区块标题
 }
 
 /***********************顶部导航条***********************/
-.dropdown-menu{ //二级菜单
-  > .active {
-    a,a:hover,a:focus{
-      color:#333;
-    }
-  }
-}
+
+
 
 #navbar {
   padding-left: 10px; //覆写bootstrap的15px
@@ -164,6 +159,14 @@ h2.block-title { //区块标题
 
 .navbar-default {
   border: none;
+
+  .dropdown-menu{ //二级菜单
+    > .active {
+      a,a:hover,a:focus{
+        color:#333;
+      }
+    }
+  }
   a {
     &:hover, &:focus {
       .icon {
@@ -187,6 +190,10 @@ h2.block-title { //区块标题
       > a:hover, > a:focus {
         color: $yyOrange;
         @include transition(0.1);
+        span.icon{
+          color: $yyOrange;
+          @include transition(0.1);
+        }
       }
     }
     .active {
