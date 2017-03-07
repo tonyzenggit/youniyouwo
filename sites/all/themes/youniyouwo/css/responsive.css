@@ -107,6 +107,9 @@
     .node-type-zhuoyou .commerce-product-field-commerce-price .field-item {
       border-bottom: 0; }
   .node-type-zhuoyou .region-content-top {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .node-type-zhuoyou .field-name-body {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 /*# sourceMappingURL=responsive.css.map */

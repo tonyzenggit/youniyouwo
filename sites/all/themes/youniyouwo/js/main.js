@@ -50,14 +50,16 @@
 
         $('.panel-group').on('hidden.bs.collapse', toggleIcon).on('shown.bs.collapse', toggleIcon);
         //!!!Function(给有二级菜单的一级菜单增加hover效果，这里用JS比用CSS的:hover好，因为Bootstrap的Nav用open类来控制二级菜单的display)
-        var navExpanded = $("li.expanded.dropdown");
-        navExpanded.hover(function () {
-            navExpanded.addClass("open");
-        }, function () {
-            navExpanded.removeClass("open");
-        });
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { //较好的简洁代码判断非移动端
+            var navExpanded = $("li.expanded.dropdown");
+            navExpanded.hover(function () {
+                navExpanded.addClass("open");
+            }, function () {
+                navExpanded.removeClass("open");
+            });
+        }
+
+
+        //******************这里结束，往上面看******************
     });
-
-
-    //******************这里结束，往上面看******************
 })(jQuery);

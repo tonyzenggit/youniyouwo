@@ -23,8 +23,9 @@ $yyOrange: #FF5722; //主题用橘子色，副色调
 
 /***********************管理界面设置***********************/
 ul.contextual-links {
-  list-style:none;
+  list-style: none;
 }
+
 body.admin-menu {
   #navbar {
     z-index: 400; //用以不挡住管理iframe
@@ -62,7 +63,7 @@ body.admin-menu {
   box-shadow: 0 0 6px rgba(255, 87, 34, 0.7);
   @include transition();
   @include opacity(0.2);
-  &:focus,&:hover{
+  &:focus, &:hover {
     @include opacity(1);
   }
 }
@@ -127,8 +128,6 @@ h2.block-title { //区块标题
 
 /***********************顶部导航条***********************/
 
-
-
 #navbar {
   padding-left: 10px; //覆写bootstrap的15px
   position: fixed;
@@ -160,10 +159,10 @@ h2.block-title { //区块标题
 .navbar-default {
   border: none;
 
-  .dropdown-menu{ //二级菜单
+  .dropdown-menu { //二级菜单
     > .active {
-      a,a:hover,a:focus{
-        color:#333;
+      a, a:hover, a:focus {
+        color: #333;
       }
     }
   }
@@ -190,7 +189,7 @@ h2.block-title { //区块标题
       > a:hover, > a:focus {
         color: $yyOrange;
         @include transition(0.1);
-        span.icon{
+        span.icon {
           color: $yyOrange;
           @include transition(0.1);
         }
@@ -493,6 +492,110 @@ ul.ajax-register-links.inline { //ajax注册登录
   }
 }
 
+/***********************桌游分类页面***********************/
+.page-node-34 {
+  .region-content-top-first,.region-content-top-second{
+    margin-top: 4 * $regionMargin;
+  }
+  i#yizhi,i#juesebanyan,i#celue { //给每个分类埋下锚点，方便用hash定位。
+    position: absolute;
+    top: -100px; //负数即为原位置往上
+  }
+  h2.block-title {
+    font-size: 22px;
+    //display: inline-block;
+    border-left: 0;
+    padding-left: 0;
+    text-align: center;
+    i { //标题右边的小图标
+      margin-left: 6px;
+      position: relative;
+      top: 2px;
+      font-size: 18px;
+    }
+  }
+  h4 { //商品英文名
+    font-size: 12px;
+    color: #555;
+  }
+  p {
+    span.hl {
+      color: #FF5722;
+      font-weight: bold;
+    }
+  }
+  .view-id-zhuoyou {
+    box-shadow: 0 0 8px rgba(96, 125, 139, 0.25);
+    padding: 10px;
+  }
+  table {
+    img.img-responsive {
+      box-shadow: 0 0 4px rgba(255, 87, 34, 0.75);
+      &:hover {
+        box-shadow: 0 0 8px rgba(255, 87, 34, 0.75);
+      }
+    }
+    tbody:hover { //hover blur效果
+      td {
+        color: transparent;
+        text-shadow: 0 0 3px #aaa;
+        h3{
+          text-shadow: 0 0 1px #aaa;
+          color: transparent;
+        }
+        h4{
+          text-shadow: 0 0 3px #555;
+          color: transparent;
+        }
+        span.hl{
+          text-shadow: 0 0 3px #FF5722;
+          color: transparent;
+        }
+        img{
+          -webkit-filter:blur(2px);
+          filter:blur(2px);
+        }
+      }
+      tr:hover{
+        td{
+          color:#555;
+          text-shadow: 0 1px 0 #fff;
+          h3{
+            color:#000;
+            text-shadow: 0 1px 0 #fff;
+          }
+          h4{
+            color:#555;
+            text-shadow: 0 1px 0 #fff;
+          }
+          span.hl{
+            color:#FF5722;
+            text-shadow: 0 1px 0 #fff;
+          }
+          img{
+            -webkit-filter:blur(0px);
+            filter:blur(0px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.table { //去掉table所有边框
+  > thead, > tbody, > tfoot {
+    > tr {
+      > th, > td {
+        border-top: 0;
+        min-width: 170px; //解决文字排版
+      }
+    }
+  }
+}
+
+
+
+
 /***********************footer***********************/
 footer#main { //使用main来区分主footer和其他footer
   margin-top: 2 * $regionMargin;
@@ -549,6 +652,7 @@ footer#main { //使用main来区分主footer和其他footer
   box-shadow: none;
   border-color: #EEEEEE;
 }
+
 .panel-default {
   .field-content {
     color: #555;
@@ -568,6 +672,7 @@ footer#main { //使用main来区分主footer和其他footer
     }
   }
 }
+
 .more-less { //icon控制
   float: right;
   color: #3F51B5;

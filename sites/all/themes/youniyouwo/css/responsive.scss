@@ -199,5 +199,9 @@ $regionMargin: 10px; //这里是移动端专用的RegionMargin
     .region-content-top {
       margin-top: $regionMargin;
     }
+    .field-name-body{
+      padding-left:15px;
+      padding-right:15px;
+    }
   }
 }
