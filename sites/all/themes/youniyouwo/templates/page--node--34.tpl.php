@@ -78,12 +78,13 @@
         <div class="navbar-header">
             <?php if ($logo): ?>
                 <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="点我回到首页">
-                    <img src="<?php print $logo; ?>" alt="点我回到首页" />
+                    <img src="<?php print $logo; ?>" alt="点我回到首页"/>
                 </a>
             <?php endif; ?>
 
             <?php if (!empty($site_name)): ?>
-                <a class="name navbar-brand" href="<?php print $front_page; ?>" title="点我回到首页"><?php print $site_name; ?></a>
+                <a class="name navbar-brand" href="<?php print $front_page; ?>"
+                   title="点我回到首页"><?php print $site_name; ?></a>
             <?php endif; ?>
 
             <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
@@ -161,6 +162,7 @@
                 <?php print render($page['sidebar_second']); ?>
             </aside>  <!-- /#sidebar-second -->
         <?php endif; ?>
+
         <?php if (!empty($page['content_top'])): ?>
             <?php print render($page['content_top']); ?>
         <?php endif; ?>
@@ -170,6 +172,16 @@
         <?php if (!empty($page['content_top_second'])): ?>
             <?php print render($page['content_top_second']); ?>
         <?php endif; ?>
+        <div id="affixNav">
+            <h3>快捷导航<i class="icon glyphicon glyphicon-send"></i></h3>
+            <ul class="nav">
+                <li class="active"><a href="#juesebanyan">角色扮演型桌游</a></li>
+                <li><a href="#yizhi">益智型桌游</a></li>
+                <li><a href="#celue">策略型桌游</a></li>
+                <li class="bottom"><a href="#">返回顶部<i class="icon glyphicon glyphicon-chevron-up"></i></a></li>
+            </ul>
+        </div>
+
         <?php if (!empty($page['content_top_third'])): ?>
             <?php print render($page['content_top_third']); ?>
         <?php endif; ?>
@@ -181,6 +193,7 @@
 
 <div class="main-container container-fluid">
     <div class="row">
+
         <?php if (!empty($page['content_top_fullwidth'])): ?>
             <?php print render($page['content_top_fullwidth']); ?>
         <?php endif; ?>

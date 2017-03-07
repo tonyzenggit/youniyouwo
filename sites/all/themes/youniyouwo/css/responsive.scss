@@ -10,6 +10,8 @@ $screen-md-max: ($screen-lg-min - 1); //screen //1199px
 
 // 基本设置
 $regionMargin: 10px; //这里是移动端专用的RegionMargin
+$yyBlue: #00a8ec; //主题用蓝色，主色调
+$yyOrange: #FF5722; //主题用橘子色，副色调
 @mixin opacity($opacity:0.5) { //透明度兼容，默认0.5
   opacity: $opacity;
   filter: alpha(opacity=$opacity * 100);
@@ -202,6 +204,34 @@ $regionMargin: 10px; //这里是移动端专用的RegionMargin
     .field-name-body{
       padding-left:15px;
       padding-right:15px;
+    }
+  }
+  #affixNav{
+    top:15%;
+    h3{
+      visibility: hidden;
+      i{
+        visibility: visible;
+        background: $yyOrange;
+        border-radius: 50%;
+        color: #fff;
+        width: 34px;
+        height: 34px;
+        padding-top: 8px;
+        padding-right: 4px;
+        cursor:pointer;
+      }
+    }
+    ul{
+      visibility: hidden;
+      border:2px solid rgba(255, 87, 34, 0.6);
+
+    }
+    li{
+      border-bottom:2px solid rgba(255, 87, 34, 0.6);
+    }
+    li.bottom{
+      border:0;
     }
   }
 }

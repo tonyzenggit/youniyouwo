@@ -110,6 +110,28 @@
     margin-top: 10px; }
   .node-type-zhuoyou .field-name-body {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+
+  #affixNav {
+    top: 15%; }
+    #affixNav h3 {
+      visibility: hidden; }
+      #affixNav h3 i {
+        visibility: visible;
+        background: #FF5722;
+        border-radius: 50%;
+        color: #fff;
+        width: 34px;
+        height: 34px;
+        padding-top: 8px;
+        padding-right: 4px;
+        cursor: pointer; }
+    #affixNav ul {
+      visibility: hidden;
+      border: 2px solid rgba(255, 87, 34, 0.6); }
+    #affixNav li {
+      border-bottom: 2px solid rgba(255, 87, 34, 0.6); }
+    #affixNav li.bottom {
+      border: 0; } }
 
 /*# sourceMappingURL=responsive.css.map */

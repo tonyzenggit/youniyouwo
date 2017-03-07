@@ -58,8 +58,26 @@
                 navExpanded.removeClass("open");
             });
         }
-
-
+        //!!!Function(桌游分类页面的AffixNav)
+        var $affixNav = $("#affixNav");
+        var $affixNavUl = $affixNav.find("ul");
+        $affixNav.affix({
+            offset: {
+                top: 125
+            }
+        });
+        //!!!Function(桌游分类页面的AffixNav在移动端的适配)
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $affixNav.find(".icon").click(function () {
+                //console.log("test");
+                if ($affixNavUl.css("visibility", "hidden")) {
+                    $affixNavUl.css("visibility", "visible");
+                }
+                if ($affixNavUl.css("visibility", "visible")) {
+                    $affixNavUl.css("visibility", "hidden");
+                }
+            })
+        }
         //******************这里结束，往上面看******************
     });
 })(jQuery);
