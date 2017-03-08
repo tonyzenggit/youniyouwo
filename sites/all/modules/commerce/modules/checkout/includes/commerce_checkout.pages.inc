@@ -203,7 +203,7 @@ function commerce_checkout_form($form, &$form_state, $order, $checkout_page) {
         '#attributes' => array('class' => array('checkout-cancel')),
         '#submit' => array('commerce_checkout_form_cancel_submit'),
         '#limit_validation_errors' => array(),
-        '#prefix' => $button_operator,
+
       );
     }
     elseif ($checkout_page['prev_page'] && !empty($checkout_page['back_value'])) {

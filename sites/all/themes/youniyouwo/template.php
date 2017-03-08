@@ -9,4 +9,6 @@ function youniyouwo_preprocess_page(&$variables, $hook)
     if (isset($variables['node']->type)) {
         $variables['theme_hook_suggestions'][] =  'page__' .  $variables['node']->type;
     }
+    //覆写评论字段
+
 }
