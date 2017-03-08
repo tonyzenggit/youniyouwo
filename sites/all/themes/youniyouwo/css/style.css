@@ -89,6 +89,12 @@ h2.block-title {
 .clear_fix, .clearfix {
   clear: both; }
 
+.flt_right {
+  float: right; }
+
+.flt_left {
+  float: left; }
+
 /***********************顶部导航条***********************/
 #navbar {
   padding-left: 10px;
@@ -466,6 +472,95 @@ ul.ajax-register-links.inline {
 
 fieldset.checkout-buttons.panel {
   border: none; }
+
+/***********************新闻列表页NewsShow***********************/
+.view-id-news img {
+  box-shadow: 1px 1px 6px #9E9E9E; }
+  .view-id-news img:hover {
+    box-shadow: 2px 2px 10px #607D8B; }
+.view-id-news h3.title {
+  font-size: 22px; }
+  .view-id-news h3.title a {
+    color: #333;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+  .view-id-news h3.title:hover a {
+    color: #fff;
+    background: #00a8ec; }
+.view-id-news .zhaiyao {
+  margin-top: 20px;
+  color: #777; }
+.view-id-news a.more {
+  font-size: 14px;
+  color: #00a8ec;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block; }
+  .view-id-news a.more:hover {
+    color: #FF5722;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+.view-id-news p.date {
+  color: #777; }
+
+.node-type-article .col-sm-6 ul {
+  padding-left: 0; }
+.node-type-article .col-sm-6 a.colorbox {
+  margin-bottom: 20px;
+  display: inline-block; }
+.node-type-article .col-sm-6 p.date {
+  margin-top: 50px;
+  display: inline-block; }
+.node-type-article h2.block-title {
+  border-left: none; }
+  .node-type-article h2.block-title i {
+    margin-right: 4px;
+    color: #FF5722; }
+.node-type-article .owl-item img:hover {
+  box-shadow: 0 0 6px #FF5722; }
+.node-type-article a.return {
+  display: block;
+  height: 40px;
+  color: #fff;
+  background: #00a8ec;
+  width: 190px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 2px;
+  margin: 100px auto 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .node-type-article a.return span {
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .node-type-article a.return span:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  .node-type-article a.return:hover {
+    box-shadow: 0 0 8px #555; }
+    .node-type-article a.return:hover span {
+      padding-right: 15px; }
+      .node-type-article a.return:hover span:after {
+        opacity: 1;
+        right: 0; }
 
 /***********************footer***********************/
 footer#main {

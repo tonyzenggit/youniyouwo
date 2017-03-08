@@ -45,6 +45,14 @@ $yyOrange: #FF5722; //主题用橘子色，副色调
       }
     }
   }
+  .node-type-article{ //解决owl-carousel的bug，常见
+    .owl-carousel{
+      .owl-wrapper{
+        margin-left:30px;
+        margin-bottom:30px;
+      }
+    }
+  }
 }
 
 //移动端适配
