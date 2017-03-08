@@ -136,6 +136,15 @@
     #affixNav li {
       border-bottom: 2px solid rgba(255, 87, 34, 0.6); }
     #affixNav li.bottom {
-      border: 0; } }
+      border: 0; }
+
+  .view-id-news .zhaiyao {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .node-type-article .owl-carousel img {
+    margin: 0 auto; }
+  .node-type-article h2.block-title {
+    text-align: center; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -474,6 +474,8 @@ fieldset.checkout-buttons.panel {
   border: none; }
 
 /***********************新闻列表页NewsShow***********************/
+.view-id-news .news-item {
+  margin-bottom: 20px; }
 .view-id-news img {
   box-shadow: 1px 1px 6px #9E9E9E; }
   .view-id-news img:hover {

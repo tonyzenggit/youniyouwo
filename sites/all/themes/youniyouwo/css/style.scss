@@ -671,6 +671,9 @@ fieldset.checkout-buttons.panel{
 
 /***********************新闻列表页NewsShow***********************/
 .view-id-news{ //新闻视图
+  .news-item{
+    margin-bottom:20px;
+  }
   img{ //封面图
     box-shadow:1px 1px 6px #9E9E9E;
     &:hover{

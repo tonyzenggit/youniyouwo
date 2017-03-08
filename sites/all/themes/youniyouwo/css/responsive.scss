@@ -242,4 +242,21 @@ $yyOrange: #FF5722; //主题用橘子色，副色调
       border:0;
     }
   }
+  .view-id-news{
+    .zhaiyao{
+      padding-left:10px;
+      padding-right:10px;
+    }
+
+  }
+  .node-type-article{
+    .owl-carousel{
+      img{
+        margin:0 auto;
+      }
+    }
+    h2.block-title{
+      text-align: center;
+    }
+  }
 }
