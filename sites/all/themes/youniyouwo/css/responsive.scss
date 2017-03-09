@@ -53,6 +53,7 @@ $yyOrange: #FF5722; //主题用橘子色，副色调
       }
     }
   }
+
 }
 
 //移动端适配
@@ -257,6 +258,11 @@ $yyOrange: #FF5722; //主题用橘子色，副色调
     }
     h2.block-title{
       text-align: center;
+    }
+  }
+  fieldset.commerce_payment {
+    .form-item-commerce-payment-payment-method {
+      display: block;
     }
   }
 }

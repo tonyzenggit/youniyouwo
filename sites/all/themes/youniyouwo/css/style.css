@@ -564,7 +564,7 @@ fieldset.checkout-buttons.panel {
         opacity: 1;
         right: 0; }
 
-/***********************购物车Cart***********************/
+/***********************Commerce购物环节***********************/
 .page-cart .region-content-top {
   margin-top: 30px; }
 .page-cart h2.block-title {
@@ -574,6 +574,12 @@ fieldset.checkout-buttons.panel {
     color: #FF5722; }
 .page-cart .owl-item img:hover {
   box-shadow: 0 0 6px #FF5722; }
+
+fieldset.commerce_payment .form-item-commerce-payment-payment-method {
+  display: inline-block;
+  margin-right: 12px; }
+fieldset.commerce_payment #payment-details img {
+  max-width: 350px; }
 
 /***********************footer***********************/
 footer#main {

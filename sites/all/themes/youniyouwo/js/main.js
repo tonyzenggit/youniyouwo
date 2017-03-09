@@ -78,6 +78,9 @@
                 }
             })
         }
+        //!!!Function(预览订单页面的设置)
+        $(".customer_profile_billing > .panel-heading .panel-title").html("账单信息");
+        $(".field-name-field-c-address,.field-name-field-c-name,.field-name-field-c-phone").addClass("col-xs-12 col-sm-4");
         //******************这里结束，往上面看******************
     });
 })(jQuery);

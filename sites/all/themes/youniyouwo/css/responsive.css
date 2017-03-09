@@ -145,6 +145,9 @@
   .node-type-article .owl-carousel img {
     margin: 0 auto; }
   .node-type-article h2.block-title {
-    text-align: center; } }
+    text-align: center; }
+
+  fieldset.commerce_payment .form-item-commerce-payment-payment-method {
+    display: block; } }
 
 /*# sourceMappingURL=responsive.css.map */
