@@ -260,9 +260,26 @@ $yyOrange: #FF5722; //主题用橘子色，副色调
       text-align: center;
     }
   }
-  fieldset.commerce_payment {
+  fieldset.commerce_payment { //支付方法
     .form-item-commerce-payment-payment-method {
       display: block;
+    }
+  }
+  .owl-carousel-suijituijian3{ //随机推荐owlCarousel
+    img{
+      margin:0 auto;
+    }
+  }
+  .commerce-price-formatted-components {
+    .component-total {
+      text-align: left;
+    }
+  }
+  fieldset.commerce_payment {
+    #payment-details {
+      img{
+        max-width:100%;
+      }
     }
   }
 }

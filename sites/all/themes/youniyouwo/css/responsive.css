@@ -148,6 +148,15 @@
     text-align: center; }
 
   fieldset.commerce_payment .form-item-commerce-payment-payment-method {
-    display: block; } }
+    display: block; }
+
+  .owl-carousel-suijituijian3 img {
+    margin: 0 auto; }
+
+  .commerce-price-formatted-components .component-total {
+    text-align: left; }
+
+  fieldset.commerce_payment #payment-details img {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=responsive.css.map */
