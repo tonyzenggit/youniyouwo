@@ -780,6 +780,27 @@ fieldset.checkout-buttons.panel{
   }
 
 }
+/***********************购物车Cart***********************/
+.page-cart{
+  .region-content-top{
+    margin-top:30px;
+  }
+  h2.block-title{
+    border-left:none;
+    i{
+      margin-right:4px;
+      color:$yyOrange;
+    }
+  }
+  .owl-item{
+    img{
+      &:hover{
+        box-shadow:0 0 6px $yyOrange;
+      }
+    }
+  }
+}
+
 /***********************footer***********************/
 footer#main { //使用main来区分主footer和其他footer
   margin-top: 2 * $regionMargin;

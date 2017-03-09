@@ -564,6 +564,17 @@ fieldset.checkout-buttons.panel {
         opacity: 1;
         right: 0; }
 
+/***********************购物车Cart***********************/
+.page-cart .region-content-top {
+  margin-top: 30px; }
+.page-cart h2.block-title {
+  border-left: none; }
+  .page-cart h2.block-title i {
+    margin-right: 4px;
+    color: #FF5722; }
+.page-cart .owl-item img:hover {
+  box-shadow: 0 0 6px #FF5722; }
+
 /***********************footer***********************/
 footer#main {
   margin-top: 60px;
