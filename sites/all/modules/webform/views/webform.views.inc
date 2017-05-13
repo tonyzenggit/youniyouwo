@@ -7,9 +7,6 @@
 
 function webform_views_data() {
 
-  /**
-   * Webform table definitions.
-   */
   $data['webform']['table']['group'] = t('Webform');
   $data['webform']['table']['join'] = array(
     'node' => array(
@@ -19,7 +16,7 @@ function webform_views_data() {
     ),
   );
 
-  // status
+  // 状态
   $data['webform']['status'] = array(
     'title' => t('Status'),
     'help' => t('The open or closed status of a webform.'),

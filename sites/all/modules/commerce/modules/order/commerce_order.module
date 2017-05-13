@@ -743,18 +743,10 @@ function commerce_order_new($uid = 0, $status = NULL, $type = 'commerce_order') 
 function commerce_order_save($order) {
   return entity_get_controller('commerce_order')->save($order);
 }
-
-/**
- * Loads an order by ID.
- */
 function commerce_order_load($order_id) {
   $orders = commerce_order_load_multiple(array($order_id), array());
   return $orders ? reset($orders) : FALSE;
 }
-
-/**
- * Loads an order by number.
- */
 function commerce_order_load_by_number($order_number) {
   $orders = commerce_order_load_multiple(array(), array('order_number' => $order_number));
   return $orders ? reset($orders) : FALSE;

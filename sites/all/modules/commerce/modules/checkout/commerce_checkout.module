@@ -737,13 +737,9 @@ function commerce_checkout_pane_callback($checkout_pane, $callback) {
  */
 function commerce_checkout_access($order, $account = NULL) {
   global $user;
-
-  // Default to the current user as the account whose access we're checking.
   if (empty($account)) {
     $account = clone($user);
   }
-
-  // First, if this order doesn't belong to the account return FALSE.
   if ($account->uid) {
     if ($account->uid != $order->uid) {
       return FALSE;
@@ -751,16 +747,12 @@ function commerce_checkout_access($order, $account = NULL) {
   }
   elseif (empty($_SESSION['commerce_cart_completed_orders']) ||
     !in_array($order->order_id, $_SESSION['commerce_cart_completed_orders'])) {
-    // And then return FALSE if the anonymous user's session doesn't specify
-    // this order ID.
     if (empty($_SESSION['commerce_cart_orders']) || !in_array($order->order_id, $_SESSION['commerce_cart_orders'])) {
       return FALSE;
     }
   }
-
   return TRUE;
 }
-
 /**
  * Checks access to a particular checkout page for a given order.
  *

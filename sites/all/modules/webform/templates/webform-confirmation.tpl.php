@@ -25,5 +25,5 @@
 </div>
 
 <div class="links">
-  <a href="<?php print url('node/'. $node->nid) ?>"><?php print t('Go back to the form') ?></a>
+  <a href="<?php print url('news') ?>"><?php print t('点击返回新闻动态首页') ?></a>
 </div>

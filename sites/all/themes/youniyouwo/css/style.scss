@@ -507,7 +507,7 @@ ul.ajax-register-links.inline { //ajax注册登录
   }
   i#yizhi, i#juesebanyan, i#celue { //给每个分类埋下锚点，方便用hash定位。
     position: absolute;
-    top: -100px; //负数即为原位置往上
+    margin-top: -150px; //负数即为原位置往上
   }
   h2.block-title {
     font-size: 22px;
@@ -714,8 +714,9 @@ fieldset.checkout-buttons.panel {
       @include transition();
     }
   }
-  p.date {
+  .date,.author {
     color: #777;
+    margin-right:10px;
   }
 
 }
@@ -748,45 +749,49 @@ fieldset.checkout-buttons.panel {
       }
     }
   }
-  a.return { //点击返回按钮
-    display: block;
-    height: 40px;
-    color: #fff;
-    background: #00a8ec;
-    width: 190px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 18px;
-    border-radius: 2px;
-    margin: 100px auto 0;
+
+
+}
+a.return { //点击返回按钮 //已成为通用样式，只要用return类即可
+  display: block;
+  height: 40px;
+  color: #fff;
+  background: #00a8ec;
+  width: 190px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 2px;
+  margin: 100px auto 0;
+  @include transition(0.3);
+  span {
+    display: inline-block;
+    position: relative;
     @include transition(0.3);
-    span {
-      display: inline-block;
-      position: relative;
+    &:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
       @include transition(0.3);
-      &:after {
-        content: '»';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        @include transition(0.3);
-      }
     }
-    &:hover {
-      box-shadow: 0 0 8px #555;
-      span {
-        padding-right: 15px;
-        &:after {
-          opacity: 1;
-          right: 0;
-        }
+  }
+  &:hover {
+    box-shadow: 0 0 8px #555;
+    span {
+      padding-right: 15px;
+      &:after {
+        opacity: 1;
+        right: 0;
       }
     }
   }
-
 }
-
+a.return2 { //点击返回按钮 //已成为通用样式，只要用return类即可
+  @extend a.return;
+  background: $yyOrange;
+}
 /***********************Commerce购物环节***********************/
 .page-cart {
   .region-content-top {
@@ -811,15 +816,69 @@ fieldset.checkout-buttons.panel {
 fieldset.commerce_payment {
   .form-item-commerce-payment-payment-method {
     display: inline-block;
-    margin-right:12px;
+    margin-right: 12px;
 
   }
-  #payment-details{
-    img{
-      max-width:350px;
+  #payment-details {
+    img {
+      max-width: 350px;
     }
   }
 
+}
+
+/***********************Forum论坛***********************/
+.page-forum {
+  ul.action-links {
+    padding-left: 0; //覆盖原默认样式
+  }
+  #forum {
+    th {
+      .img-responsive {
+        display: inline;
+      }
+      a {
+        margin-right: 26px;
+      }
+    }
+    td.replies {
+      a{
+        display: none;
+      }
+    }
+    .last-reply{
+      span.submitted {
+        color:#000;
+      }
+    }
+    tr {
+      margin-top: 20px;
+    }
+    span.submitted {
+      color: #ccc;
+      a {
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+.node-type-forum {
+  span.submitted, div.submitted {
+    color: #ccc;
+  }
+  .page-header {
+    margin-bottom: 20px;
+  }
+  #comments {
+    margin-top: 60px;
+    .comment {
+      margin-left: 30px;
+    }
+  }
+  h2.title.comment-form {
+    margin-top: 30px;
+  }
 }
 
 /***********************footer***********************/

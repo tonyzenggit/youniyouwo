@@ -823,7 +823,6 @@ function commerce_product_autocomplete($entity_type = 'commerce_product', $field
 function commerce_product_match_products($field, $instance = NULL, $string = '', $match = 'contains', $ids = array(), $limit = NULL, $access_tag = FALSE) {
   $results = &drupal_static(__FUNCTION__, array());
 
-  // Create unique id for static cache.
   $cid = implode(':', array(
     $field['field_name'],
     $match,

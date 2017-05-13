@@ -7,14 +7,14 @@ Drupal.behaviors.initColorbox = {
     }
 
     if (settings.colorbox.mobiledetect && window.matchMedia) {
-      // Disable Colorbox for small screens.
+      // 在小屏幕上屏蔽弹窗
       var mq = window.matchMedia("(max-device-width: " + settings.colorbox.mobiledevicewidth + ")");
       if (mq.matches) {
         return;
       }
     }
 
-    // Use "data-colorbox-gallery" if set otherwise use "rel".
+
     settings.colorbox.rel = function () {
       if ($(this).data('colorbox-gallery')) {
         return $(this).data('colorbox-gallery');
